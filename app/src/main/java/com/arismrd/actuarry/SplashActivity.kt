@@ -8,6 +8,12 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 
 class SplashActivity : AppCompatActivity() {
+    /**
+     * NAMA  : ARI SUMARDI
+     * NIM   : 10117162
+     * KELAS : IF-4
+     * TUGAS UTS
+     */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -7,6 +7,12 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class WelcomeActivity : AppCompatActivity() {
+    /**
+     * NAMA  : ARI SUMARDI
+     * NIM   : 10117162
+     * KELAS : IF-4
+     * TUGAS UTS
+     */
 
     private var btn: Button? = null
     private var preferenceHelper: PreferenceHelper? = null

@@ -10,6 +10,13 @@ import com.github.paolorotolo.appintro.AppIntro
 
 class MainActivity : AppIntro() {
 
+    /**
+     * NAMA  : ARI SUMARDI
+     * NIM   : 10117162
+     * KELAS : IF-4
+     * TUGAS UTS
+     */
+
     private var preferenceHelper: PreferenceHelper? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
