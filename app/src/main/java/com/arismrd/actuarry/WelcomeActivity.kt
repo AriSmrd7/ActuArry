@@ -2,11 +2,10 @@ package com.arismrd.actuarry
 
 import PreferenceHelper
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_welcome.*
 
 class WelcomeActivity : AppCompatActivity() {
     /**
@@ -15,33 +14,41 @@ class WelcomeActivity : AppCompatActivity() {
      * KELAS : IF-4
      * TUGAS UTS
      */
-    private fun setupNavigation() {
-        val navView: BottomNavigationView = findViewById(R.id.nav_view)
-        navView.setOnNavigationItemSelectedListener { item ->
+
+    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> {
-                    Toast.makeText(this, "Home selected", Toast.LENGTH_SHORT).show()
-                    true
+                    val fragment = HomeFragment()
+                    supportFragmentManager.beginTransaction().replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
+                        .commit()
+                    return@OnNavigationItemSelectedListener true
                 }
                 R.id.navigation_daily -> {
-                    Toast.makeText(this, "Daily selected", Toast.LENGTH_SHORT).show()
-                    true
+                    val fragment = DailyFragment()
+                    supportFragmentManager.beginTransaction().replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
+                        .commit()
+                    return@OnNavigationItemSelectedListener true
                 }
                 R.id.navigation_galery -> {
-                    Toast.makeText(this, "Galery selected", Toast.LENGTH_SHORT).show()
-                    true
+                    val fragment = GalleryFragment()
+                    supportFragmentManager.beginTransaction().replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
+                        .commit()
+                    return@OnNavigationItemSelectedListener true
                 }
                 R.id.navigation_video -> {
-                    Toast.makeText(this, "Video selected", Toast.LENGTH_SHORT).show()
-                    true
+                    val fragment = VideoFragment()
+                    supportFragmentManager.beginTransaction().replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
+                        .commit()
+                    return@OnNavigationItemSelectedListener true
                 }
                 R.id.navigation_profile -> {
-                    Toast.makeText(this, "Profile selected", Toast.LENGTH_SHORT).show()
-                    true
+                    val fragment = ProfileFragment()
+                    supportFragmentManager.beginTransaction().replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
+                        .commit()
+                    return@OnNavigationItemSelectedListener true
                 }
-                else -> true
             }
-        }
+        false
     }
 
     private var preferenceHelper: PreferenceHelper? = null
@@ -49,6 +56,13 @@ class WelcomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
+        nav_view.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         preferenceHelper = PreferenceHelper(this)
+
+        if (savedInstanceState == null) {
+            val fragment = HomeFragment()
+            supportFragmentManager.beginTransaction().replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
+                .commit()
+        }
     }
 }
