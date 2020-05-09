@@ -1,56 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card2"
+        android:id="@+id/cardFriend"
         android:layout_width="300dp"
-        android:layout_height="400dp"
+        android:layout_height="280dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@color/colorPrimary"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp">
+        card_view:cardBackgroundColor="@color/colorBgWhite"
+        card_view:cardCornerRadius="8dp"
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorPrimary">
-
-            <TextView
-                android:id="@+id/txt_nama"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="30dp"
-                android:text="MAKES"
-                android:textColor="@color/colorWhiteSmoke"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+            android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/img_teman"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_below="@id/txt_nama"
+                android:id="@+id/FriendImg"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="20dp"
                 android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_nav_profile" />
-
+                android:src="@drawable/photos_fera" />
             <TextView
-                android:id="@+id/txt_umur"
+                android:id="@+id/FriendTxtNama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/img_teman"
+                android:layout_below="@+id/FriendImg"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:text="Ayam Goreng"
-                android:textColor="@color/colorBgWhite"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+                android:text="Nama"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:fontFamily="@font/gilroybold" />
+            <TextView
+                android:id="@+id/FriendDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/FriendTxtNama"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Description"
+                android:textStyle="italic"
+                android:fontFamily="@font/gilroyregular"
+                android:textColor="@color/colorSlateGray"
+                android:textSize="14sp" />
 
         </RelativeLayout>
 

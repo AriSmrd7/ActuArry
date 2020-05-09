@@ -14,4 +14,5 @@
     <color name="colorAlmostAzure">#ECF9FF</color>
     <color name="colorWhiteSmoke">#F5F5F5</color>
     <color name="colorSkyBlue">#00BFFF</color>
+    <color name="colorSlateGray">#708090</color>
 </resources>

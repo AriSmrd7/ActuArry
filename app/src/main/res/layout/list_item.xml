@@ -6,24 +6,30 @@
     android:layout_gravity="center_horizontal"
     android:gravity="center"
     android:padding="2dp"
+    android:paddingBottom="100dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="40dp"
         card_view:cardBackgroundColor="@color/colorBgWhite"
         card_view:cardCornerRadius="8dp"
         card_view:contentPaddingTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
         >
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
             <ImageView
                 android:id="@+id/imgList"
                 android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_fdaily_list_item"/>
             <TextView
@@ -32,9 +38,11 @@
                 android:layout_toEndOf="@id/imgList"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingTop="10dp"
                 android:layout_gravity="left"
                 android:paddingLeft="16dp"
-                android:textSize="22sp"
+                android:layout_marginBottom="25dp"
+                android:textSize="18sp"
                 android:fontFamily="@font/gilroyregular"
                 android:text="Judul"
                 android:textColor="@color/colorPrimary"
@@ -47,10 +55,13 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/list_title"
                 android:layout_gravity="left"
+                android:layout_centerVertical="true"
                 android:paddingLeft="16dp"
                 android:textSize="16sp"
+                android:textColor="@color/colorSlateGray"
                 android:fontFamily="@font/gilroyregular"
-                android:text="Description"/>
+                android:text="Hour"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
+    </ScrollView>
 </LinearLayout>

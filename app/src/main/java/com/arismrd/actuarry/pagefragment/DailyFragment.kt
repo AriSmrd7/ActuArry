@@ -13,9 +13,20 @@ import kotlinx.android.synthetic.main.fragment_daily.*
 
 class DailyFragment : Fragment() {
     private val mListDaily = listOf(
-        ModelDaily("Mandi", 4),
-        ModelDaily("Sholat Shubuh", 4),
-        ModelDaily("Sarapan Pagi", 6)
+        ModelDaily("Mandi", "04.00"),
+        ModelDaily("Sholat Shubuh", "04.30"),
+        ModelDaily("Sarapan Pagi", "06.30"),
+        ModelDaily("Pergi Kuliah", "08.00"),
+        ModelDaily("Sholat Dzuhur", "12.10"),
+        ModelDaily("Makan Siang", "13.30"),
+        ModelDaily("Mandi", "15.00"),
+        ModelDaily("Sholat Ashar", "15.30"),
+        ModelDaily("Ngegame", "16.00"),
+        ModelDaily("Sholat Maghrib", "18.00"),
+        ModelDaily("Makan Malam", "18.30"),
+        ModelDaily("Sholat Isya", "19.30"),
+        ModelDaily("Belajar", "20.00"),
+        ModelDaily("Tidur", "22.30")
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
