@@ -1,18 +1,305 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorAlmostAzure"
+    android:layout_gravity="center_vertical">
 
-    <TextView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fontFamily="@font/gilroybold"
-        android:text="@string/home"
-        android:textColor="@color/colorTextWhite"
-        android:textSize="34sp"
-        android:gravity="center_vertical|center_horizontal"
-        />
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_gradient"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="14dp">
 
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/ImgCircle"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_foto_profil"
+            app:civ_border_color="@color/colorBgWhite"
+            app:civ_border_width="3dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="@color/colorBlueShadow"
+            app:civ_shadow_radius="5" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:fontFamily="@font/gilroybold"
+            android:textStyle="normal"
+            android:text="@string/fhome_nama" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fhome_about"
+            android:textSize="18sp"
+            android:fontFamily="@font/gilroybold"
+            />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/TxtView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gilroyregular"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:text="@string/fhome_desc"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/gilroybold"
+            android:text="@string/fhome_title_myinterest"
+            />
+        <View
+            android:id="@+id/view3"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView xmlns="http://schemas.android.com/apk/res-auto"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorBgWhite"
+            card_view:cardCornerRadius="8dp"
+            card_view:contentPaddingTop="10dp"
+            tools:ignore="MissingConstraints">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/hb"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroyregular"
+                    android:text="@string/fhome_card_hobby"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/imghb"
+                    android:layout_below="@+id/hb"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_fhome_hobby"
+                    />
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textColorHighlight="@color/colorSkyBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imghb"
+                    android:fontFamily="@font/gilroybold"
+                    android:text="@string/fhome_isi_hobby"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView xmlns="http://schemas.android.com/apk/res-auto"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorBgWhite"
+            card_view:cardCornerRadius="8dp"
+            card_view:contentPaddingTop="10dp"
+            tools:ignore="MissingConstraints">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/fd"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroyregular"
+                    android:text="@string/fhome_card_food"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/imgfd"
+                    android:layout_below="@+id/fd"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_fhome_food"
+                    />
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgfd"
+                    android:fontFamily="@font/gilroybold"
+                    android:text="@string/fhome_isi_food"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView xmlns="http://schemas.android.com/apk/res-auto"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorBgWhite"
+            card_view:cardCornerRadius="8dp"
+            card_view:contentPaddingTop="10dp"
+            tools:ignore="MissingConstraints">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/dr"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroyregular"
+                    android:text="@string/fhome_card_drink"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/imgdr"
+                    android:layout_below="@+id/dr"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_fhome_drink"
+                    />
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgdr"
+                    android:fontFamily="@font/gilroybold"
+                    android:text="@string/fhome_isi_drink"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <androidx.cardview.widget.CardView xmlns="http://schemas.android.com/apk/res-auto"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorBgWhite"
+            card_view:cardCornerRadius="8dp"
+            card_view:contentPaddingTop="10dp"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/gilroyregular"
+                android:text="@string/fhome_card_interest"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView xmlns="http://schemas.android.com/apk/res-auto"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorBgWhite"
+            card_view:cardCornerRadius="8dp"
+            card_view:contentPaddingTop="10dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/gilroyregular"
+                android:text="@string/fhome_card_ambition"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView xmlns="http://schemas.android.com/apk/res-auto"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorBgWhite"
+            card_view:cardCornerRadius="8dp"
+            card_view:contentPaddingTop="10dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/gilroyregular"
+                android:text="@string/fhome_card_religion"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
 </LinearLayout>

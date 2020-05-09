@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
+import com.arismrd.actuarry.introfragment.IntroFragment1
+import com.arismrd.actuarry.introfragment.IntroFragment2
+import com.arismrd.actuarry.introfragment.IntroFragment3
 import com.github.paolorotolo.appintro.AppIntro
 
 class MainActivity : AppIntro() {
@@ -38,7 +41,6 @@ class MainActivity : AppIntro() {
         addSlide(IntroFragment1())  //extend AppIntro and comment setContentView
         addSlide(IntroFragment2())
         addSlide(IntroFragment3())
-        addSlide(IntroFragment4())
 
     }
 

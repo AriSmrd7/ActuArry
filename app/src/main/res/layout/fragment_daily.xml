@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorAlmostAzure">
 
     <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:fontFamily="@font/gilroybold"
+        android:text="Daily Activity"
+        />
+    <View
+        android:id="@+id/view3"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_recycler_daily"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fontFamily="@font/gilroybold"
-        android:text="@string/daily"
-        android:textColor="@color/colorTextWhite"
-        android:textSize="34sp"
-        android:gravity="center_vertical|center_horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         />
-
 </LinearLayout>
