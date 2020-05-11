@@ -1,19 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAlmostAzure"
     android:orientation="vertical"
-    android:background="@color/colorAlmostAzure">
+    android:layout_marginBottom="50dp"
+    android:gravity="center">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
         android:fontFamily="@font/gilroybold"
-        android:text="@string/profile"
-        android:textColor="@color/colorTextWhite"
-        android:textSize="34sp"
-        android:gravity="center_vertical|center_horizontal"
+        android:text="My Profile"
         />
+    <View
+        android:id="@+id/view3"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="26dp"
+                    android:src="@drawable/ic_foto_profil"
+                    app:civ_border_color="@color/colorBgWhite"
+                    app:civ_border_width="1dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="@color/colorBlueShadow"
+                    app:civ_shadow_radius="5" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/TxtView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fhome_nama"
+                    android:layout_toRightOf="@+id/profile_image"
+                    android:fontFamily="@font/gilroybold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/TxtUmur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22 Tahun"
+                    android:layout_toRightOf="@+id/profile_image"
+                    android:fontFamily="@font/gilroybold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorSlateGray"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="14.5dp">
+
+                <View
+                    android:layout_width="5.6dp"
+                    android:layout_height="225dp"
+                    android:background="@color/colorPrimary" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="35.6dp"
+                    android:background="@drawable/rectangle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="225dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="19dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20.3dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/fhome_about"
+                            android:textColor="#333232"
+                            android:textSize="13.7sp" />
+
+                        <TextView
+                            android:id="@+id/TxtView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12.3dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/fhome_desc"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="14.5dp">
+
+                <View
+                    android:layout_width="5.6dp"
+                    android:layout_height="365dp"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="460dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="35.6dp"
+                    android:background="@drawable/white_cueve_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="19dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20.3dp"
+                            android:gravity="center_horizontal"
+                            android:text="Contact"
+                            android:textColor="#333232"
+                            android:textSize="13.7sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/imgPhone"
+                                android:layout_width="25.8dp"
+                                android:layout_height="25.8dp"
+                                android:layout_marginTop="20.3dp"
+                                android:background="@drawable/ic_whatsapp" />
+
+                            <TextView
+                                android:id="@+id/txtPhone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+62 858-6372-7216"
+                                android:layout_marginTop="20.3dp"
+                                android:layout_marginLeft="10.3dp"
+                                android:layout_toRightOf="@+id/imgPhone" />
+
+                            <TextView
+                                android:id="@+id/imgEmail"
+                                android:layout_width="25.8dp"
+                                android:layout_height="25.8dp"
+                                android:layout_marginTop="12.3dp"
+                                android:background="@drawable/ic_gmail"
+                                android:layout_below="@id/imgPhone"/>
+
+                            <TextView
+                                android:id="@+id/txtEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="arismrd13@gmail.com"
+                                android:layout_marginTop="12.3dp"
+                                android:layout_marginLeft="10.3dp"
+                                android:layout_toRightOf="@+id/imgEmail"
+                                android:layout_below="@id/imgPhone"/>
+
+                            <TextView
+                                android:id="@+id/imgInstagram"
+                                android:layout_width="25.8dp"
+                                android:layout_height="25.8dp"
+                                android:layout_marginTop="12.3dp"
+                                android:background="@drawable/ic_instagram"
+                                android:layout_below="@id/imgEmail"/>
+
+                            <TextView
+                                android:id="@+id/txtInstagram"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgEmail"
+                                android:layout_marginLeft="10.3dp"
+                                android:layout_marginTop="12.3dp"
+                                android:layout_toRightOf="@+id/imgInstagram"
+                                android:text="arismrd7" />
+
+                            <TextView
+                                android:id="@+id/imgFacebook"
+                                android:layout_width="25.8dp"
+                                android:layout_height="25.8dp"
+                                android:layout_marginTop="12.3dp"
+                                android:background="@drawable/ic_facebook"
+                                android:layout_below="@id/imgInstagram"/>
+
+                            <TextView
+                                android:id="@+id/txtFacebook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ari Sumardi"
+                                android:layout_marginTop="12.3dp"
+                                android:layout_marginLeft="10.3dp"
+                                android:layout_toRightOf="@+id/imgFacebook"
+                                android:layout_below="@id/imgInstagram"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
