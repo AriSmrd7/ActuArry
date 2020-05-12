@@ -4,10 +4,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
-    <string name="daily">Aktivitas</string>
-    <string name="gallery">Galeri</string>
-    <string name="video">Movie</string>
-    <string name="profile">Profil</string>
+    <string name="daily">Activity</string>
+    <string name="gallery">Gallery</string>
+    <string name="video">Movies</string>
+    <string name="profile">Profile</string>
     <string name="fhome_nama">Ari Sumardi</string>
     <string name="fhome_about">About Me</string>
     <string name="fhome_desc">Saya adalah seorang mahasiswa Teknik Informatika UNIKOM yang berasal dari Sumedang.
@@ -18,13 +18,13 @@
     <string name="fhome_card_food">Food</string>
     <string name="fhome_card_drink">Drink</string>
     <string name="fhome_card_interest">Interest</string>
-    <string name="fhome_card_ambition">Ambition</string>
+    <string name="fhome_card_goals">Goals</string>
     <string name="fhome_card_religion">Religion</string>
 
     <string name="fhome_isi_hobby">Play Game</string>
     <string name="fhome_isi_food">Mie Ayam</string>
     <string name="fhome_isi_drink">Coffee</string>
     <string name="fhome_isi_interest">Programming</string>
-    <string name="fhome_isi_ambition">Make a Startup</string>
+    <string name="fhome_isi_goals">Build Startup</string>
     <string name="fhome_isi_religion">Islam</string>
 </resources>

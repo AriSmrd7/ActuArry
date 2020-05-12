@@ -73,7 +73,7 @@
                     android:id="@+id/TxtUmur"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="22 Tahun"
+                    android:text="21 Tahun"
                     android:layout_toRightOf="@+id/profile_image"
                     android:fontFamily="@font/gilroybold"
                     android:layout_marginLeft="10dp"

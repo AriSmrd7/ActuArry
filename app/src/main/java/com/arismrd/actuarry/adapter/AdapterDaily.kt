@@ -1,5 +1,6 @@
 package com.arismrd.actuarry.adapter
 
+
 import com.arismrd.actuarry.model.ModelDaily
 import android.view.LayoutInflater
 import android.view.ViewGroup
