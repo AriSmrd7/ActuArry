@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:paddingBottom="65dp"
     android:background="@color/colorAlmostAzure">
 
     <TextView
@@ -24,7 +25,6 @@
         android:background="@color/colorPrimary" />
 
     <LinearLayout
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

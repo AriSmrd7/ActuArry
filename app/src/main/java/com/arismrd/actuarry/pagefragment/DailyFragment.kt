@@ -26,8 +26,7 @@ class DailyFragment : Fragment() {
         ModelDaily("Makan Malam", "18.30"),
         ModelDaily("Sholat Isya", "19.30"),
         ModelDaily("Belajar", "20.00"),
-        ModelDaily("Tidur", "22.30"),
-        ModelDaily(" ", " ")
+        ModelDaily("Tidur", "22.30")
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

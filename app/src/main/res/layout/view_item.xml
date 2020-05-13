@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="8dp"
-    app:cardBackgroundColor="@color/colorSlateGray"
+    app:cardBackgroundColor="@color/colorAlmostWhite"
     app:cardPreventCornerOverlap="false">
 
     <LinearLayout
@@ -28,7 +28,7 @@
             tools:Text="Foto"
             android:gravity="center"
             android:textSize="12sp"
-            android:fontFamily="@font/gilroyregular"
+            android:fontFamily="@font/gilroybold"
             android:textColor="@color/colorSkyBlue"
             android:id="@+id/view_item_title"
             android:layout_width="match_parent"

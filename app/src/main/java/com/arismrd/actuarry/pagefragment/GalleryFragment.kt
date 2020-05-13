@@ -38,22 +38,22 @@ class GalleryFragment : Fragment() {
         initItems()
 
         // 設定 RecyclerView 屬性
-        view_list.setHasFixedSize(true)
+        list_item_gallery.setHasFixedSize(true)
 
         // 設定 Adapter
         adapter = MyAdapter(items)
-        view_list.adapter = adapter
+        list_item_gallery.adapter = adapter
 
         // 設定 LayoutManager
         layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-        view_list.layoutManager = layoutManager
+        list_item_gallery.layoutManager = layoutManager
     }
 
 
         private fun initItems() {
 
-            for (n in 1..8) {
-                val photoRes = when (n % 8) {
+            for (n in 1..10) {
+                val photoRes = when (n % 10) {
                     0 -> R.drawable.photos1
                     1 -> R.drawable.photos2
                     2 -> R.drawable.photos3
@@ -62,6 +62,8 @@ class GalleryFragment : Fragment() {
                     5 -> R.drawable.photos6
                     6 -> R.drawable.photos7
                     7 -> R.drawable.photos8
+                    8 -> R.drawable.photos9
+                    9 -> R.drawable.photos10
                     else -> Color.TRANSPARENT
                 }
                 items.add(ModelGallery("Foto $n", photoRes))
