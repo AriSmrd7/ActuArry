@@ -16,8 +16,8 @@ class AdapterDaily(private val list: List<ModelDaily>)
     }
 
     override fun onBindViewHolder(holder: DailyViewHolder, position: Int) {
-        val movie: ModelDaily = list[position]
-        holder.bind(movie)
+        val daily: ModelDaily = list[position]
+        holder.bind(daily)
     }
 
     override fun getItemCount(): Int = list.size

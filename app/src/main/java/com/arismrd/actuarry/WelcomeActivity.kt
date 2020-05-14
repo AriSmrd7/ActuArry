@@ -40,7 +40,7 @@ class WelcomeActivity : AppCompatActivity() {
                 }
                 R.id.navigation_video -> {
                     val fragment =
-                        VideoFragment()
+                        MediaFragment()
                     supportFragmentManager.beginTransaction().replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
                         .commit()
                     return@OnNavigationItemSelectedListener true

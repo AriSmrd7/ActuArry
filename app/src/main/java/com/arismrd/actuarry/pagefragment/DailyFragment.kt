@@ -13,20 +13,20 @@ import kotlinx.android.synthetic.main.fragment_daily.*
 
 class DailyFragment : Fragment() {
     private val mListDaily = listOf(
-        ModelDaily("Mandi", "04.00"),
-        ModelDaily("Sholat Shubuh", "04.30"),
-        ModelDaily("Sarapan Pagi", "06.30"),
-        ModelDaily("Pergi Kuliah", "08.00"),
-        ModelDaily("Sholat Dzuhur", "12.10"),
-        ModelDaily("Makan Siang", "13.30"),
-        ModelDaily("Mandi", "15.00"),
-        ModelDaily("Sholat Ashar", "15.30"),
-        ModelDaily("Ngegame", "16.00"),
-        ModelDaily("Sholat Maghrib", "18.00"),
-        ModelDaily("Makan Malam", "18.30"),
-        ModelDaily("Sholat Isya", "19.30"),
-        ModelDaily("Belajar", "20.00"),
-        ModelDaily("Tidur", "22.30")
+        ModelDaily("Mandi", "04.00",R.drawable.ic_favorite),
+        ModelDaily("Sholat Shubuh", "04.30",R.drawable.photos8),
+        ModelDaily("Sarapan Pagi", "06.30",R.drawable.photos10),
+        ModelDaily("Pergi Kuliah", "08.00",R.drawable.photos6),
+        ModelDaily("Sholat Dzuhur", "12.10",R.drawable.ic_favorite),
+        ModelDaily("Makan Siang", "13.30",R.drawable.ic_favorite),
+        ModelDaily("Mandi", "15.00", R.drawable.ic_nav_galery),
+        ModelDaily("Sholat Ashar", "15.30", R.drawable.ic_fhome_food),
+        ModelDaily("Ngegame", "16.00", R.drawable.photos1),
+        ModelDaily("Sholat Maghrib", "18.00",  R.drawable.photos2),
+        ModelDaily("Makan Malam", "18.30",  R.drawable.photos3),
+        ModelDaily("Sholat Isya", "19.30", R.drawable.photos4),
+        ModelDaily("Belajar", "20.00",  R.drawable.photos7),
+        ModelDaily("Tidur", "22.30",  R.drawable.photos9)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

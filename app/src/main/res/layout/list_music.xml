@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:padding="2dp"
+    android:paddingBottom="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            card_view:cardBackgroundColor="@color/colorBgWhite"
+            card_view:cardCornerRadius="8dp"
+            card_view:contentPaddingTop="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgMusic"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_fdaily_list_item"/>
+                <TextView
+                    android:id="@+id/list_judul"
+                    android:layout_toRightOf="@id/imgMusic"
+                    android:layout_toEndOf="@id/imgMusic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="left"
+                    android:paddingLeft="16dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/gilroyregular"
+                    android:text="Judul"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_toRightOf="@id/imgMusic"
+                    android:layout_toEndOf="@id/imgMusic"
+                    android:id="@+id/list_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/list_judul"
+                    android:layout_gravity="left"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorSlateGray"
+                    android:fontFamily="@font/gilroybold"
+                    android:text="Artis"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -3,24 +3,20 @@ package com.arismrd.actuarry.item
 import com.arismrd.actuarry.model.ModelDaily
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.arismrd.actuarry.R
+import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.list_item.view.*
 
-class DailyViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
+class DailyViewHolder (inflater: LayoutInflater, parent: ViewGroup) :
     RecyclerView.ViewHolder(inflater.inflate(R.layout.list_item, parent, false)) {
-    private var mTitleView: TextView? = null
-    private var mYearView: TextView? = null
 
-
-    init {
-        mTitleView = itemView.findViewById(R.id.list_title)
-        mYearView = itemView.findViewById(R.id.list_description)
-    }
-
-    fun bind(movie: ModelDaily) {
-        mTitleView?.text = movie.title
-        mYearView?.text = movie.hour.toString()
+    fun bind(daily: ModelDaily) {
+        itemView.apply {
+            list_title?.text = daily.title
+            list_description?.text = daily.hour
+            Picasso.get().load(daily.photo).into(imgList)
+        }
     }
 
 }
