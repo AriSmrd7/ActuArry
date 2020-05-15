@@ -152,7 +152,7 @@
 
                 <View
                     android:layout_width="5.6dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="465dp"
                     android:background="@color/colorPrimary" />
 
                 <LinearLayout
@@ -268,16 +268,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/Find"
                                 android:src="@drawable/img_maps"/>
-
-                            <Button
-                                android:id="@+id/btnAlert"
-                                android:layout_below="@id/maps"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:onClick="alertClick"
-                                android:text="About Apps"
-                                android:background="@color/colorSlateGray"
-                                />
+                            
                         </RelativeLayout>
 
                     </LinearLayout>
