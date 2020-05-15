@@ -4,15 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     android:background="@color/colorPrimary">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorTextWhite"
+        android:text="Aktivitas dan Teman"
         android:fontFamily="@font/gilroybold"
-        android:textSize="34sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Intro 2"/>
+        android:textColor="@color/colorTextWhite"
+        android:textSize="34sp" />
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:src="@drawable/fr_daily"/>
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Teman dan Aktivitas"
+        android:fontFamily="@font/gilroybold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorSlateGray"
+        android:textSize="24sp" />
 
 </LinearLayout>

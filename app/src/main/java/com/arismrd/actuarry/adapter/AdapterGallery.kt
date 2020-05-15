@@ -6,12 +6,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.arismrd.actuarry.R
 import com.arismrd.actuarry.model.ModelGallery
-import kotlinx.android.synthetic.main.view_item.view.*
+import kotlinx.android.synthetic.main.view_gallery.view.*
 
-class MyAdapter(val items: List<ModelGallery>) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
+class AdapterGallery(val items: List<ModelGallery>) : RecyclerView.Adapter<AdapterGallery.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.view_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.view_gallery, parent, false)
         return ViewHolder(view)
     }
 

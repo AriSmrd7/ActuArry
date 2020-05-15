@@ -4,15 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     android:background="@color/colorPrimary">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Intro 1"
+        android:text="Selamat Datang"
         android:fontFamily="@font/gilroybold"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/colorTextWhite"
         android:textSize="34sp" />
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:src="@drawable/fr_home"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desain UI Home yang segar"
+        android:fontFamily="@font/gilroybold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorSlateGray"
+        android:textSize="24sp" />
 
 </LinearLayout>

@@ -12,21 +12,27 @@ import com.arismrd.actuarry.adapter.AdapterDaily
 import kotlinx.android.synthetic.main.fragment_daily.*
 
 class DailyFragment : Fragment() {
+    /**
+     * NAMA  : ARI SUMARDI
+     * NIM   : 10117162
+     * KELAS : IF-4
+     * TUGAS UTS
+     */
     private val mListDaily = listOf(
-        ModelDaily("Mandi", "04.00",R.drawable.ic_favorite),
-        ModelDaily("Sholat Shubuh", "04.30",R.drawable.photos8),
-        ModelDaily("Sarapan Pagi", "06.30",R.drawable.photos10),
-        ModelDaily("Pergi Kuliah", "08.00",R.drawable.photos6),
-        ModelDaily("Sholat Dzuhur", "12.10",R.drawable.ic_favorite),
-        ModelDaily("Makan Siang", "13.30",R.drawable.ic_favorite),
-        ModelDaily("Mandi", "15.00", R.drawable.ic_nav_galery),
-        ModelDaily("Sholat Ashar", "15.30", R.drawable.ic_fhome_food),
-        ModelDaily("Ngegame", "16.00", R.drawable.photos1),
-        ModelDaily("Sholat Maghrib", "18.00",  R.drawable.photos2),
-        ModelDaily("Makan Malam", "18.30",  R.drawable.photos3),
-        ModelDaily("Sholat Isya", "19.30", R.drawable.photos4),
-        ModelDaily("Belajar", "20.00",  R.drawable.photos7),
-        ModelDaily("Tidur", "22.30",  R.drawable.photos9)
+        ModelDaily("Mandi", "04.00",R.drawable.img_bath),
+        ModelDaily("Sholat Shubuh", "04.30",R.drawable.img_pray),
+        ModelDaily("Sarapan Pagi", "06.30",R.drawable.img_breakfast),
+        ModelDaily("Pergi Kuliah", "08.00",R.drawable.img_campuss),
+        ModelDaily("Sholat Dzuhur", "12.10",R.drawable.img_pray),
+        ModelDaily("Makan Siang", "13.30",R.drawable.img_lunch),
+        ModelDaily("Mandi", "15.00", R.drawable.img_bath),
+        ModelDaily("Sholat Ashar", "15.30", R.drawable.img_pray),
+        ModelDaily("Ngegame", "16.00", R.drawable.img_game),
+        ModelDaily("Sholat Maghrib", "18.00",  R.drawable.img_pray),
+        ModelDaily("Makan Malam", "18.30",  R.drawable.img_dinner),
+        ModelDaily("Sholat Isya", "19.30", R.drawable.img_pray),
+        ModelDaily("Belajar", "20.00",  R.drawable.img_study),
+        ModelDaily("Tidur", "22.30",  R.drawable.img_sleep)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,17 +45,15 @@ class DailyFragment : Fragment() {
                               savedInstanceState: Bundle?): View? =
         inflater.inflate(R.layout.fragment_daily, container, false)
 
-    // populate the views now that the layout has been inflated
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // RecyclerView node initialized here
+
         list_recycler_daily.apply {
-            // set a LinearLayoutManager to handle Android
-            // RecyclerView behavior
-            layoutManager = LinearLayoutManager(activity)
-            // set the custom adapter to the RecyclerView
+            layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL ,false)
             adapter = AdapterDaily(mListDaily)
         }
+
     }
 
     companion object {

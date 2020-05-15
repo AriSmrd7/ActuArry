@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.MediaController
+import androidx.fragment.app.FragmentContainer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.arismrd.actuarry.R
 import com.arismrd.actuarry.adapter.AdapterMusic
@@ -12,14 +14,22 @@ import com.arismrd.actuarry.model.ModelMusic
 import kotlinx.android.synthetic.main.fragment_media.*
 
 class MediaFragment : Fragment() {
+    /**
+     * NAMA  : ARI SUMARDI
+     * NIM   : 10117162
+     * KELAS : IF-4
+     * TUGAS UTS
+     */
+
         private val mListMusic = listOf(
-            ModelMusic("Take Me Away", "Alan Walker", R.drawable.photos1),
-            ModelMusic("Alone", "Marshmello", R.drawable.photos2),
-            ModelMusic("When I Was Your Man", "Bruno Mars", R.drawable.photos3),
-            ModelMusic("By My Side", "Acejax", R.drawable.photos4),
-            ModelMusic("Said The Sky", "iLLenium", R.drawable.photos5),
-            ModelMusic("In Your Arms", "iLLenium", R.drawable.photos6),
-            ModelMusic("Hold On", "iLLenium", R.drawable.photos7)
+            ModelMusic("Take Me Away", "Alan Walker", R.drawable.img_takemeaway),
+            ModelMusic("Alone", "Marshmello", R.drawable.img_alone),
+            ModelMusic("After The After Party", "Charli XCX", R.drawable.img_afterparty),
+            ModelMusic("By My Side", "Acejax", R.drawable.img_bymyside),
+            ModelMusic("Let Me Down Slowly", "Alec Benjamin", R.drawable.img_letmedown),
+            ModelMusic("In Your Arms", "iLLenium", R.drawable.img_inyour),
+            ModelMusic("Hold On", "iLLenium", R.drawable.img_holdon),
+            ModelMusic("Million Days", "Sabai ft. Claire Ridgely", R.drawable.img_million)
         )
 
         override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,12 +47,10 @@ class MediaFragment : Fragment() {
             super.onViewCreated(view, savedInstanceState)
             // RecyclerView node initialized here
             list_recycler_music.apply {
-                // set a LinearLayoutManager to handle Android
-                // RecyclerView behavior
                 layoutManager = LinearLayoutManager(activity)
-                // set the custom adapter to the RecyclerView
                 adapter = AdapterMusic(mListMusic)
             }
+
         }
 
         companion object {

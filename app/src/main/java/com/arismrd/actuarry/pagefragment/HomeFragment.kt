@@ -9,6 +9,12 @@ import com.arismrd.actuarry.R
 
 
 class HomeFragment : Fragment() {
+    /**
+     * NAMA  : ARI SUMARDI
+     * NIM   : 10117162
+     * KELAS : IF-4
+     * TUGAS UTS
+     */
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
         inflater.inflate(R.layout.fragment_home, container, false)
     override fun onActivityCreated(savedInstanceState: Bundle?) {

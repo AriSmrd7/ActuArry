@@ -15,7 +15,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             card_view:cardBackgroundColor="@color/colorBgWhite"
             card_view:cardCornerRadius="8dp"
             card_view:contentPaddingTop="10dp"
@@ -23,33 +23,27 @@
             android:layout_marginRight="14dp"
             >
             <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
                 <ImageView
                     android:id="@+id/imgMusic"
-                    android:layout_width="60dp"
-                    android:layout_height="50dp"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/ic_fdaily_list_item"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/img_afterparty"/>
                 <TextView
                     android:id="@+id/list_judul"
-                    android:layout_toRightOf="@id/imgMusic"
-                    android:layout_toEndOf="@id/imgMusic"
+                    android:layout_below="@id/imgMusic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
-                    android:layout_gravity="left"
-                    android:paddingLeft="16dp"
-                    android:layout_marginBottom="25dp"
                     android:layout_marginTop="10dp"
-                    android:textSize="22sp"
+                    android:textSize="18sp"
                     android:fontFamily="@font/gilroyregular"
                     android:text="Judul"
+                    android:paddingLeft="16dp"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"/>
                 <TextView
-                    android:layout_toRightOf="@id/imgMusic"
-                    android:layout_toEndOf="@id/imgMusic"
                     android:id="@+id/list_artist"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -57,8 +51,9 @@
                     android:layout_gravity="left"
                     android:layout_centerVertical="true"
                     android:paddingLeft="16dp"
-                    android:paddingTop="10dp"
-                    android:textSize="16sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="14sp"
                     android:textColor="@color/colorSlateGray"
                     android:fontFamily="@font/gilroybold"
                     android:text="Artis"/>

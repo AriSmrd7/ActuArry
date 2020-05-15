@@ -8,16 +8,21 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.arismrd.actuarry.R
-import com.arismrd.actuarry.adapter.MyAdapter
+import com.arismrd.actuarry.adapter.AdapterGallery
 import com.arismrd.actuarry.model.ModelGallery
 import kotlinx.android.synthetic.main.fragment_gallery.*
 
 
 class GalleryFragment : Fragment() {
-
+    /**
+     * NAMA  : ARI SUMARDI
+     * NIM   : 10117162
+     * KELAS : IF-4
+     * TUGAS UTS
+     */
         private val items = mutableListOf<ModelGallery>()
 
-        private lateinit var adapter: MyAdapter
+        private lateinit var adapter: AdapterGallery
 
         private lateinit var layoutManager: StaggeredGridLayoutManager
 
@@ -41,7 +46,7 @@ class GalleryFragment : Fragment() {
         list_item_gallery.setHasFixedSize(true)
 
         // 設定 Adapter
-        adapter = MyAdapter(items)
+        adapter = AdapterGallery(items)
         list_item_gallery.adapter = adapter
 
         // 設定 LayoutManager

@@ -4,15 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     android:background="@color/colorPrimary">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorTextWhite"
+        android:text="Galeri Foto"
         android:fontFamily="@font/gilroybold"
-        android:textSize="34sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Intro 3"/>
+        android:textColor="@color/colorTextWhite"
+        android:textSize="34sp" />
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:src="@drawable/fr_gallery"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Galeri foto yang lengkap"
+        android:fontFamily="@font/gilroybold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorSlateGray"
+        android:textSize="24sp" />
 
 </LinearLayout>

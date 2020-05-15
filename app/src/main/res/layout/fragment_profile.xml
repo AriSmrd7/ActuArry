@@ -117,6 +117,7 @@
                             android:layout_marginTop="20.3dp"
                             android:gravity="center_horizontal"
                             android:text="@string/fhome_about"
+                            android:fontFamily="@font/gilroybold"
                             android:textColor="#333232"
                             android:textSize="13.7sp" />
 
@@ -128,6 +129,13 @@
                             android:layout_marginTop="10dp"
                             android:text="@string/fhome_desc"/>
 
+                        <TextView
+                            android:id="@+id/TxtView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12.3dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/about_desc"/>
 
                     </LinearLayout>
 
@@ -144,7 +152,7 @@
 
                 <View
                     android:layout_width="5.6dp"
-                    android:layout_height="365dp"
+                    android:layout_height="wrap_content"
                     android:background="@color/colorPrimary" />
 
                 <LinearLayout
@@ -152,7 +160,7 @@
                     android:layout_height="460dp"
                     android:layout_marginLeft="13dp"
                     android:layout_marginRight="35.6dp"
-                    android:background="@drawable/white_cueve_bg">
+                    android:background="@drawable/rectangle">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -167,6 +175,7 @@
                             android:layout_marginTop="20.3dp"
                             android:gravity="center_horizontal"
                             android:text="Contact"
+                            android:fontFamily="@font/gilroybold"
                             android:textColor="#333232"
                             android:textSize="13.7sp" />
 
@@ -243,7 +252,32 @@
                                 android:layout_marginLeft="10.3dp"
                                 android:layout_toRightOf="@+id/imgFacebook"
                                 android:layout_below="@id/imgInstagram"/>
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                android:id="@+id/Find"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Find Me"
+                                android:fontFamily="@font/gilroybold"
+                                android:layout_below="@+id/txtFacebook"
+                                />
+                            <ImageView
+                                android:id="@+id/maps"
+                                android:layout_marginTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Find"
+                                android:src="@drawable/img_maps"/>
 
+                            <Button
+                                android:id="@+id/btnAlert"
+                                android:layout_below="@id/maps"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="alertClick"
+                                android:text="About Apps"
+                                android:background="@color/colorSlateGray"
+                                />
                         </RelativeLayout>
 
                     </LinearLayout>

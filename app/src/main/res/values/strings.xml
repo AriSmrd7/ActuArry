@@ -27,4 +27,18 @@
     <string name="fhome_isi_interest">Programming</string>
     <string name="fhome_isi_goals">Build Startup</string>
     <string name="fhome_isi_religion">Islam</string>
+
+    <string name="friend1">Agus Wasiat</string>
+    <string name="friend2">Dandi Putra</string>
+    <string name="friend3">Gilang Eka</string>
+    <string name="friend4">Ferawati</string>
+
+    <string name="descfriend1">si <i>sadboy</i> yang kerap nyepam story WA</string>
+    <string name="descfriend2">orangnya kayak bocah, tapi baik hati</string>
+    <string name="descfriend3">diajak ngobrol kadang kagak nyambung</string>
+    <string name="descfriend4">Si cantik yang always care</string>
+
+    <string name="about_desc">Saya lahir dan besar di Cijeungjing, sebuah daerah kecil yang
+        ada di pelosok Kabupaten Sumedang. Saya bercita-cita untuk membangun startup di masa depan.
+    </string>
 </resources>
